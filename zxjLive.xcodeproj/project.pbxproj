@@ -1170,7 +1170,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zxj.zxjLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zxj/Desktop/liveProject/zxjLive/zxjLive/Header-OCSwift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "zxjLive/Header-OCSwift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1197,7 +1197,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zxj.zxjLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zxj/Desktop/liveProject/zxjLive/zxjLive/Header-OCSwift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "zxjLive/Header-OCSwift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
