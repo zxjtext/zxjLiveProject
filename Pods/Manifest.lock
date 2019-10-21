@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.9.0)
+  - HandyJSON (5.0.0)
+  - Kingfisher (4.10.1)
+  - RxSwift (5.0.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON
+  - Kingfisher
+  - RxSwift
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+    - RxSwift
+    - SVProgressHUD
+    - SwiftyJSON
+  trunk:
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: dd71b7e5d18fcf27cfbbcd215e6bb6cf0058ed7d
+
+COCOAPODS: 1.8.3
