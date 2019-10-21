@@ -32,6 +32,8 @@ class liveDetaileViewController: UIViewController,Emitterable{
         let point = CGPoint(x:sender.center.x, y: sender.center.y - sender.bounds.height*0.5)
         sender.isSelected ? startEmittering(point) : stopEmittering()
         
+        
+        
     }
     
    
