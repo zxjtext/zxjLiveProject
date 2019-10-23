@@ -9,7 +9,8 @@
 import UIKit
 
 class apiConfig : NSObject{
-    var homeDataUrl  =  "v4/moreAnchor.ios"
+    var homeDataUrl  =  "/home/v4/moreAnchor.ios"
+    var giftDataUrl  =  "/pay/v4/giftList.ios"
     
     static let sharedInstance = apiConfig()
     

@@ -91,20 +91,20 @@ extension HYPageCollectionView {
     func register(nib : UINib, identifier : String) {
         collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
+    
+    func reloadData() {
+        collectionView.reloadData()
+    }
 }
 
 
 // MARK:- UICollectionViewDataSource
 extension HYPageCollectionView : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
-        print(dataSource?.numberOfSections(in: self) ?? 0)
-        
         return dataSource?.numberOfSections(in: self) ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         let itemCount = dataSource?.pageCollectionView(self, numberOfItemsInSection: section) ?? 0
         
         if section == 0 {
@@ -141,6 +141,7 @@ extension HYPageCollectionView : UICollectionViewDelegate {
         // 1.取出在屏幕中显示的Cell
         let point = CGPoint(x: layout.sectionInset.left + 1 + collectionView.contentOffset.x, y: layout.sectionInset.top + 1)
         guard let indexPath = collectionView.indexPathForItem(at: point) else { return }
+        
         // 2.判断分组是否有发生改变
         if sourceIndexPath.section != indexPath.section {
             // 3.1.修改pageControl的个数

@@ -11,8 +11,7 @@
  import UIKit
 
  class EnvironmentManager: NSObject {
-    
-    var serverURL  =  "http://qf.56.com/home/"
+    var serverURL  =  "http://qf.56.com"
     static let sharedInstance = EnvironmentManager()
     private override init() {
         

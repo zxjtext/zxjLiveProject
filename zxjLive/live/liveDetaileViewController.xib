@@ -29,6 +29,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpN-ek-eRl">
                     <rect key="frame" x="16" y="607" width="46" height="46"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" image="room_btn_chat.png">
                         <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -36,11 +37,25 @@
                         <action selector="chatBtnAction:" destination="-1" eventType="touchUpInside" id="ZvB-gz-F7O"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNA-L5-WN2">
+                    <rect key="frame" x="162.5" y="605" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gca-82-mv4"/>
+                        <constraint firstAttribute="width" constant="50" id="TXU-2d-fn2"/>
+                    </constraints>
+                    <state key="normal" title="🎁"/>
+                    <connections>
+                        <action selector="giftBtnAction:" destination="-1" eventType="touchUpInside" id="B1r-GF-Op4"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="f1e-AV-fna" secondAttribute="bottom" constant="14" id="4KA-ci-qOh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f1e-AV-fna" secondAttribute="trailing" constant="16" id="4dU-Rg-ZZf"/>
+                <constraint firstItem="nNA-L5-WN2" firstAttribute="centerY" secondItem="zpN-ek-eRl" secondAttribute="centerY" id="Fte-TD-Vxb"/>
+                <constraint firstItem="nNA-L5-WN2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gmi-sx-21c"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zpN-ek-eRl" secondAttribute="bottom" constant="14" id="kTn-cX-atF"/>
                 <constraint firstItem="zpN-ek-eRl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tNA-ih-jkh"/>
             </constraints>

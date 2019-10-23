@@ -108,6 +108,14 @@
 		DF713BD6235DA69300ECE394 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD5235DA69300ECE394 /* QHNormalEmotionSort.plist */; };
 		DF713BD8235DB30D00ECE394 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */; };
 		DF90FDE323559A0000DFFE47 /* heard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90FDE223559A0000DFFE47 /* heard.swift */; };
+		DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */; };
+		DF98AB01235FF7400056BA86 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFF235FF7400056BA86 /* GiftPackage.swift */; };
+		DF98AB02235FF7400056BA86 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AB00235FF7400056BA86 /* GiftModel.swift */; };
+		DF98AB04235FF78A0056BA86 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AB03235FF78A0056BA86 /* BaseModel.swift */; };
+		DF98AB0A235FFEAA0056BA86 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AB06235FFEAA0056BA86 /* GiftViewCell.swift */; };
+		DF98AB0B235FFEAA0056BA86 /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AB07235FFEAA0056BA86 /* GiftListView.swift */; };
+		DF98AB0C235FFEAA0056BA86 /* GiftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF98AB08235FFEAA0056BA86 /* GiftViewCell.xib */; };
+		DF98AB0D235FFEAA0056BA86 /* GiftListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF98AB09235FFEAA0056BA86 /* GiftListView.xib */; };
 		DFF696D2235816B400166A18 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF696D0235816B400166A18 /* homeViewController.swift */; };
 		DFF696D3235816B400166A18 /* homeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF696D1235816B400166A18 /* homeViewController.xib */; };
 		DFF696D5235817FE00166A18 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF696D4235817FE00166A18 /* AnchorViewController.swift */; };
@@ -251,6 +259,14 @@
 		DF713BD5235DA69300ECE394 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		DF90FDE223559A0000DFFE47 /* heard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heard.swift; sourceTree = "<group>"; };
+		DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		DF98AAFF235FF7400056BA86 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		DF98AB00235FF7400056BA86 /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		DF98AB03235FF78A0056BA86 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		DF98AB06235FFEAA0056BA86 /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		DF98AB07235FFEAA0056BA86 /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		DF98AB08235FFEAA0056BA86 /* GiftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftViewCell.xib; sourceTree = "<group>"; };
+		DF98AB09235FFEAA0056BA86 /* GiftListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftListView.xib; sourceTree = "<group>"; };
 		DFDB59FA2340C56200B90D16 /* Header-OCSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-OCSwift.h"; sourceTree = "<group>"; };
 		DFF696D0235816B400166A18 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		DFF696D1235816B400166A18 /* homeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeViewController.xib; sourceTree = "<group>"; };
@@ -418,6 +434,7 @@
 				DF713BC5235D9D1700ECE394 /* Model */,
 				DF713BC3235D9D1700ECE394 /* ViewModel */,
 				DF713BB6235D9C4F00ECE394 /* HYPageView */,
+				DF98AB05235FFEAA0056BA86 /* GiftView */,
 				DF713BAB235D9BEC00ECE394 /* ChatView */,
 				DF29112523570619001B41D9 /* types.plist */,
 				DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */,
@@ -648,6 +665,7 @@
 		DF713BC3235D9D1700ECE394 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */,
 				DF713BC4235D9D1700ECE394 /* EmoticonViewModel.swift */,
 			);
 			path = ViewModel;
@@ -656,10 +674,24 @@
 		DF713BC5235D9D1700ECE394 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF98AB03235FF78A0056BA86 /* BaseModel.swift */,
+				DF98AB00235FF7400056BA86 /* GiftModel.swift */,
+				DF98AAFF235FF7400056BA86 /* GiftPackage.swift */,
 				DF713BC6235D9D1700ECE394 /* Emoticon.swift */,
 				DF713BC7235D9D1700ECE394 /* EmoticonPackage.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DF98AB05235FFEAA0056BA86 /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				DF98AB06235FFEAA0056BA86 /* GiftViewCell.swift */,
+				DF98AB08235FFEAA0056BA86 /* GiftViewCell.xib */,
+				DF98AB07235FFEAA0056BA86 /* GiftListView.swift */,
+				DF98AB09235FFEAA0056BA86 /* GiftListView.xib */,
+			);
+			path = GiftView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -797,6 +829,7 @@
 				DF3F42EB233A5F4800D16AD5 /* Assets.xcassets in Resources */,
 				DF4A8ABD2340B97B00BE8B3C /* ranking-p@2x.png in Resources */,
 				DF713BA3235D947200ECE394 /* room_btn_chat@2x.png in Resources */,
+				DF98AB0C235FFEAA0056BA86 /* GiftViewCell.xib in Resources */,
 				DF52A6BE23586F0A002EA595 /* good4_30x30_@3x.png in Resources */,
 				DF52A6B923586F0A002EA595 /* good2_30x30_@2x.png in Resources */,
 				DF4A8ABA2340B97B00BE8B3C /* ranking-n@2x.png in Resources */,
@@ -836,6 +869,7 @@
 				DF713BD2235DA5F500ECE394 /* chat_btn_emoji.png in Resources */,
 				DF4A8AD72340BD6700BE8B3C /* profileViewController.xib in Resources */,
 				DF52A6AA23586F0A002EA595 /* good9_30x30_@3x.png in Resources */,
+				DF98AB0D235FFEAA0056BA86 /* GiftListView.xib in Resources */,
 				DF713BD8235DB30D00ECE394 /* QHSohuGifSort.plist in Resources */,
 				DF4A8AB82340B97B00BE8B3C /* mine-p@3x.png in Resources */,
 			);
@@ -954,10 +988,12 @@
 				DF3F431F233A623000D16AD5 /* recommendedViewController.swift in Sources */,
 				DF713BBE235D9C4F00ECE394 /* HYTitleStyle.swift in Sources */,
 				DF3F431B233A621900D16AD5 /* liveViewController.swift in Sources */,
+				DF98AB0A235FFEAA0056BA86 /* GiftViewCell.swift in Sources */,
 				DF713BB4235D9BEC00ECE394 /* EmoticonViewCell.swift in Sources */,
 				DFF696D2235816B400166A18 /* homeViewController.swift in Sources */,
 				DF03572B233CC57800FC78AD /* APIManager.swift in Sources */,
 				DF713BC1235D9C4F00ECE394 /* HYContentView.swift in Sources */,
+				DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */,
 				DF713BC8235D9D1700ECE394 /* EmoticonViewModel.swift in Sources */,
 				DFF696D5235817FE00166A18 /* AnchorViewController.swift in Sources */,
 				DF3F432B233A62AD00D16AD5 /* coustomViewController.swift in Sources */,
@@ -968,8 +1004,11 @@
 				DF713BB1235D9BEC00ECE394 /* EmoticonView.swift in Sources */,
 				DF3F42E4233A5F4800D16AD5 /* AppDelegate.swift in Sources */,
 				DF52A64823582B5F002EA595 /* XMGNavigationController.swift in Sources */,
+				DF98AB02235FF7400056BA86 /* GiftModel.swift in Sources */,
 				DF035726233CC03B00FC78AD /* dataModel.swift in Sources */,
 				DF713BB2235D9BEC00ECE394 /* ChatToolsView.swift in Sources */,
+				DF98AB0B235FFEAA0056BA86 /* GiftListView.swift in Sources */,
+				DF98AB04235FF78A0056BA86 /* BaseModel.swift in Sources */,
 				DF713BBD235D9C4F00ECE394 /* HYTitleView.swift in Sources */,
 				DF713BBF235D9C4F00ECE394 /* HYPageView.swift in Sources */,
 				DF4A8A88234081E000BE8B3C /* NDCollectionView.swift in Sources */,
@@ -980,6 +1019,7 @@
 				DF3F4318233A620800D16AD5 /* BaseViewController.swift in Sources */,
 				DF713BC0235D9C4F00ECE394 /* HYPageCollectionView.swift in Sources */,
 				DF03572D233CC58E00FC78AD /* WRIFAPI.swift in Sources */,
+				DF98AB01235FF7400056BA86 /* GiftPackage.swift in Sources */,
 				DF4A8ACC2340BB2900BE8B3C /* homeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,9 +12,9 @@ class HYTitleStyle {
     /// 是否是滚动的Title
     var isScrollEnable : Bool = false
     /// 普通Title颜色
-    var normalColor : UIColor = UIColor(red:0, green: 0, blue: 0 ,alpha:1)
+    var normalColor : UIColor = UIColor(red: 0, green: 0, blue: 0,alpha: 1.0)
     /// 选中Title颜色
-    var selectedColor : UIColor = UIColor(red: 255, green: 127, blue: 0 ,alpha:1)
+    var selectedColor : UIColor = UIColor(red: 255, green: 127, blue: 0,alpha: 1.0)
     /// Title字体大小
     var font : UIFont = UIFont.systemFont(ofSize: 14.0)
     /// 滚动Title的字体间距

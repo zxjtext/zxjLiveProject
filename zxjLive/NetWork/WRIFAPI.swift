@@ -14,6 +14,8 @@ class WRIFAPI: NSObject {
     private override init() {
         
     }
+    
+    
     func getAPITest(url:String,parameters:[String : Any]? = nil,successful : @escaping (_ result : Any) -> (),faile : @escaping (_ result : Any) -> ()) -> Void {
         
         APIManager.sharedInstance.GETRequest(API: url, parameters:parameters, successfulCallback: { (response) in
@@ -21,8 +23,6 @@ class WRIFAPI: NSObject {
         }, faileCallback: { (response) in
             faile(response)
         })
-        
-        
     }
     
     

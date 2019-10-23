@@ -261,7 +261,7 @@ extension HYTitleView {
         let colorDelta = (selectedColorRGB.0 - normalColorRGB.0, selectedColorRGB.1 - normalColorRGB.1, selectedColorRGB.2 - normalColorRGB.2)
         
         // 3.2.变化sourceLabel
-        sourceLabel.textColor = UIColor(red: selectedColorRGB.0 - colorDelta.0 * progress, green: selectedColorRGB.1 - colorDelta.1 * progress, blue: selectedColorRGB.2 - colorDelta.2 * progress,alpha: 1)
+        sourceLabel.textColor = UIColor(red: selectedColorRGB.0 - colorDelta.0 * progress, green: selectedColorRGB.1 - colorDelta.1 * progress, blue: selectedColorRGB.2 - colorDelta.2 * progress,alpha: 1.0)
         
         // 3.2.变化targetLabel
         targetLabel.textColor = UIColor(red: normalColorRGB.0 + colorDelta.0 * progress, green: normalColorRGB.1 + colorDelta.1 * progress, blue: normalColorRGB.2 + colorDelta.2 * progress,alpha: 1.0)

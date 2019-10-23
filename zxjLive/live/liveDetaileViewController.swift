@@ -10,18 +10,33 @@ import UIKit
 
 private let kChatToolsViewHeight : CGFloat = 44
 
+private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
+
 class liveDetaileViewController: UIViewController,Emitterable{
 
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
+    fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: .UIKeyboardWillChangeFrame, object: nil)
-         
     }
     
     
+    @IBAction func giftBtnAction(_ sender: Any) {
+     UIView.animate(withDuration: 0.25, animations: {
+        
+        var pageViewFrame = self.giftListView.bounds
+        pageViewFrame.size.width = kScreenW
+        self.giftListView.frame = pageViewFrame
+        self.giftListView.frame.origin.y = kScreenH - self.giftListView.bounds.height
+        self.view.addSubview(self.giftListView)
+        
+    })
+          
+          
+    }
     @IBAction func chatBtnAction(_ sender: Any) {
         chatToolsView.inputTextField.becomeFirstResponder()
     }
@@ -43,11 +58,14 @@ class liveDetaileViewController: UIViewController,Emitterable{
 // MARK:- 设置UI界面内容
 extension liveDetaileViewController {
     fileprivate func setupUI() {
-        setupBlurView()
+        //setupBlurView()
         setupBottomView()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            chatToolsView.inputTextField.resignFirstResponder()
+        UIView.animate(withDuration: 0.25, animations: {
+                   self.giftListView.frame.origin.y = kScreenH
+               })
        }
     fileprivate func setupBlurView() {
         let blur = UIBlurEffect(style: .dark)
