@@ -93,9 +93,7 @@
 		DF713BB5235D9BEC00ECE394 /* ChatToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF713BB0235D9BEC00ECE394 /* ChatToolsView.xib */; };
 		DF713BBD235D9C4F00ECE394 /* HYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BB7235D9C4F00ECE394 /* HYTitleView.swift */; };
 		DF713BBE235D9C4F00ECE394 /* HYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BB8235D9C4F00ECE394 /* HYTitleStyle.swift */; };
-		DF713BBF235D9C4F00ECE394 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BB9235D9C4F00ECE394 /* HYPageView.swift */; };
 		DF713BC0235D9C4F00ECE394 /* HYPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BBA235D9C4F00ECE394 /* HYPageCollectionView.swift */; };
-		DF713BC1235D9C4F00ECE394 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BBB235D9C4F00ECE394 /* HYContentView.swift */; };
 		DF713BC2235D9C4F00ECE394 /* HYPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BBC235D9C4F00ECE394 /* HYPageCollectionViewLayout.swift */; };
 		DF713BC8235D9D1700ECE394 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BC4235D9D1700ECE394 /* EmoticonViewModel.swift */; };
 		DF713BC9235D9D1700ECE394 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF713BC6235D9D1700ECE394 /* Emoticon.swift */; };
@@ -107,6 +105,8 @@
 		DF713BD4235DA5F500ECE394 /* chat_btn_emoji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD0235DA5F400ECE394 /* chat_btn_emoji@2x.png */; };
 		DF713BD6235DA69300ECE394 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD5235DA69300ECE394 /* QHNormalEmotionSort.plist */; };
 		DF713BD8235DB30D00ECE394 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */; };
+		DF792C352366DABA00E846F9 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF792C342366DABA00E846F9 /* HYContentView.swift */; };
+		DF792C372366DAE300E846F9 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF792C362366DAE300E846F9 /* HYPageView.swift */; };
 		DF90FDE323559A0000DFFE47 /* heard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90FDE223559A0000DFFE47 /* heard.swift */; };
 		DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */; };
 		DF98AB01235FF7400056BA86 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFF235FF7400056BA86 /* GiftPackage.swift */; };
@@ -244,9 +244,7 @@
 		DF713BB0235D9BEC00ECE394 /* ChatToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolsView.xib; sourceTree = "<group>"; };
 		DF713BB7235D9C4F00ECE394 /* HYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleView.swift; sourceTree = "<group>"; };
 		DF713BB8235D9C4F00ECE394 /* HYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleStyle.swift; sourceTree = "<group>"; };
-		DF713BB9235D9C4F00ECE394 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
 		DF713BBA235D9C4F00ECE394 /* HYPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageCollectionView.swift; sourceTree = "<group>"; };
-		DF713BBB235D9C4F00ECE394 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
 		DF713BBC235D9C4F00ECE394 /* HYPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageCollectionViewLayout.swift; sourceTree = "<group>"; };
 		DF713BC4235D9D1700ECE394 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
 		DF713BC6235D9D1700ECE394 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
@@ -258,6 +256,8 @@
 		DF713BD0235DA5F400ECE394 /* chat_btn_emoji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_btn_emoji@2x.png"; sourceTree = "<group>"; };
 		DF713BD5235DA69300ECE394 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		DF792C342366DABA00E846F9 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
+		DF792C362366DAE300E846F9 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
 		DF90FDE223559A0000DFFE47 /* heard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heard.swift; sourceTree = "<group>"; };
 		DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		DF98AAFF235FF7400056BA86 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
@@ -654,9 +654,9 @@
 			children = (
 				DF713BB7235D9C4F00ECE394 /* HYTitleView.swift */,
 				DF713BB8235D9C4F00ECE394 /* HYTitleStyle.swift */,
-				DF713BB9235D9C4F00ECE394 /* HYPageView.swift */,
+				DF792C362366DAE300E846F9 /* HYPageView.swift */,
 				DF713BBA235D9C4F00ECE394 /* HYPageCollectionView.swift */,
-				DF713BBB235D9C4F00ECE394 /* HYContentView.swift */,
+				DF792C342366DABA00E846F9 /* HYContentView.swift */,
 				DF713BBC235D9C4F00ECE394 /* HYPageCollectionViewLayout.swift */,
 			);
 			path = HYPageView;
@@ -989,10 +989,10 @@
 				DF713BBE235D9C4F00ECE394 /* HYTitleStyle.swift in Sources */,
 				DF3F431B233A621900D16AD5 /* liveViewController.swift in Sources */,
 				DF98AB0A235FFEAA0056BA86 /* GiftViewCell.swift in Sources */,
+				DF792C372366DAE300E846F9 /* HYPageView.swift in Sources */,
 				DF713BB4235D9BEC00ECE394 /* EmoticonViewCell.swift in Sources */,
 				DFF696D2235816B400166A18 /* homeViewController.swift in Sources */,
 				DF03572B233CC57800FC78AD /* APIManager.swift in Sources */,
-				DF713BC1235D9C4F00ECE394 /* HYContentView.swift in Sources */,
 				DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */,
 				DF713BC8235D9D1700ECE394 /* EmoticonViewModel.swift in Sources */,
 				DFF696D5235817FE00166A18 /* AnchorViewController.swift in Sources */,
@@ -1010,8 +1010,8 @@
 				DF98AB0B235FFEAA0056BA86 /* GiftListView.swift in Sources */,
 				DF98AB04235FF78A0056BA86 /* BaseModel.swift in Sources */,
 				DF713BBD235D9C4F00ECE394 /* HYTitleView.swift in Sources */,
-				DF713BBF235D9C4F00ECE394 /* HYPageView.swift in Sources */,
 				DF4A8A88234081E000BE8B3C /* NDCollectionView.swift in Sources */,
+				DF792C352366DABA00E846F9 /* HYContentView.swift in Sources */,
 				DF3F4323233A624100D16AD5 /* findViewController.swift in Sources */,
 				DF713BCA235D9D1700ECE394 /* EmoticonPackage.swift in Sources */,
 				DF713BCC235D9E2800ECE394 /* NibLoadable.swift in Sources */,
