@@ -11,7 +11,7 @@ target 'zxjLive' do
   pod 'Alamofire'
   pod 'SVProgressHUD'
   pod 'Kingfisher'
-  
+  pod 'ProtocolBuffers-Swift'
   # Pods for zxjLive
 
   target 'zxjLiveTests' do
