@@ -12,17 +12,39 @@ private let kChatToolsViewHeight : CGFloat = 44
 
 private let kGiftlistViewHeight : CGFloat = kScreenH * 0.5
 
+private let kChatContentViewHeight : CGFloat = 200
+
 class liveDetaileViewController: UIViewController,Emitterable{
 
     fileprivate lazy var chatToolsView : ChatToolsView = ChatToolsView.loadFromNib()
     fileprivate lazy var giftListView : GiftListView = GiftListView.loadFromNib()
+    fileprivate lazy var chatContentView : ChatContentView = ChatContentView.loadFromNib()
+    fileprivate lazy var socket : HYSocket = HYSocket(addr: "172.16.100.58", port: 7878)
+    fileprivate var heartBeatTimer : Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: .UIKeyboardWillChangeFrame, object: nil)
+        // 3.连接聊天服务器
+        if socket.connectServer() {
+            print("连接成功")
+            socket.startReadMsg()
+            addHeartBeatTimer()
+            socket.sendJoinRoom()
+            socket.delegate = self
+        }
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+           super.viewDidDisappear(animated)
+           socket.sendLeaveRoom()
+       }
+       
+       deinit {
+           heartBeatTimer?.invalidate()
+           heartBeatTimer = nil
+       }
     
     @IBAction func giftBtnAction(_ sender: Any) {
      UIView.animate(withDuration: 0.25, animations: {
@@ -62,7 +84,7 @@ extension liveDetaileViewController {
         setupBottomView()
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-           chatToolsView.inputTextField.resignFirstResponder()
+        chatToolsView.inputTextField.resignFirstResponder()
         UIView.animate(withDuration: 0.25, animations: {
                    self.giftListView.frame.origin.y = kScreenH
                })
@@ -76,17 +98,34 @@ extension liveDetaileViewController {
     }
     
     fileprivate func setupBottomView() {
+        
+        // 0.设置Chat内容的View
+        chatContentView.frame = CGRect(x: 0, y: view.bounds.height - 44 - kChatContentViewHeight, width: view.bounds.width, height: kChatContentViewHeight)
+        chatContentView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+        view.addSubview(chatContentView)
+        
+        //
         chatToolsView.frame = CGRect(x: 0, y: view.bounds.height-88, width: view.bounds.width, height: kChatToolsViewHeight)
         chatToolsView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
         chatToolsView.delegate = self
         view.addSubview(chatToolsView)
+        
+        // 2.设置giftListView
+        giftListView.frame = CGRect(x: 0, y: view.bounds.height, width: view.bounds.width, height: kGiftlistViewHeight)
+        giftListView.autoresizingMask = [.flexibleTopMargin, .flexibleWidth]
+        view.addSubview(giftListView)
+        giftListView.delegate = self
+        
     }
 }
 
 // MARK:- 监听用户输入的内容
-extension liveDetaileViewController : ChatToolsViewDelegate {
+extension liveDetaileViewController : ChatToolsViewDelegate , GiftListViewDelegate {
     func chatToolsView(toolView: ChatToolsView, message: String) {
-        print(message)
+        socket.sendTextMsg(message: message)
+    }
+    func giftListView(giftView: GiftListView, giftModel: GiftModel) {
+        socket.sendGiftMsg(giftName: giftModel.subject, giftURL: giftModel.img2, giftCount: 1)
     }
 }
 
@@ -101,6 +140,50 @@ extension liveDetaileViewController {
             UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
             let endY = inputViewY == (kScreenH - kChatToolsViewHeight) ? kScreenH : inputViewY
             self.chatToolsView.frame.origin.y = endY
+            let contentEndY = inputViewY == (kScreenH - kChatToolsViewHeight) ? (kScreenH - kChatContentViewHeight - 44) : endY - kChatContentViewHeight
+            self.chatContentView.frame.origin.y = contentEndY
         })
+    }
+}
+
+
+
+// MARK:- 给服务器发送即时消息
+extension liveDetaileViewController {
+    
+    fileprivate func addHeartBeatTimer() {
+        heartBeatTimer = Timer(fireAt: Date(), interval: 9, target: self, selector: #selector(sendHeartBeat), userInfo: nil, repeats: true)
+        RunLoop.main.add(heartBeatTimer!, forMode: .commonModes)
+    }
+    
+    @objc fileprivate func sendHeartBeat() {
+        socket.sendHeartBeat()
+    }
+}
+
+// MARK:- 接受聊天服务器返回的消息
+extension liveDetaileViewController : HYSocketDelegate {
+    func socket(_ socket: HYSocket, joinRoom user: UserInfo) {
+        chatContentView.insertMsg(AttrStringGenerator.generateJoinLeaveRoom(user.name, true))
+    }
+    
+    func socket(_ socket: HYSocket, leaveRoom user: UserInfo) {
+        chatContentView.insertMsg(AttrStringGenerator.generateJoinLeaveRoom(user.name, false))
+    }
+    
+    func socket(_ socket: HYSocket, chatMsg: ChatMessage) {
+        // 1.通过富文本生成器, 生产需要的富文本
+        let chatMsgMAttr = AttrStringGenerator.generateTextMessage(chatMsg.user.name, chatMsg.text)
+        
+        // 2.将文本的属性字符串插入到内容View中
+        chatContentView.insertMsg(chatMsgMAttr)
+    }
+    
+    func socket(_ socket: HYSocket, giftMsg: GiftMessage) {
+        // 1.通过富文本生成器, 生产需要的富文本
+        let giftMsgAttr = AttrStringGenerator.generateGiftMessage(giftMsg.giftname, giftMsg.giftUrl, giftMsg.user.name)
+        
+        // 2.将文本的属性字符串插入到内容View中
+        chatContentView.insertMsg(giftMsgAttr)
     }
 }

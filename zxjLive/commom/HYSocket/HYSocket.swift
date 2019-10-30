@@ -126,7 +126,7 @@ extension HYSocket {
         giftMsg.user = try! userInfo.build()
         giftMsg.giftname = giftName
         giftMsg.giftUrl = giftURL
-        giftMsg.giftcount = Int32(giftCount)
+        giftMsg.giftCount = Int64(giftCount)
         
         // 2.获取对应的data
         let giftData = (try! giftMsg.build()).data()

@@ -107,18 +107,19 @@
 		DF713BD8235DB30D00ECE394 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */; };
 		DF792C352366DABA00E846F9 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF792C342366DABA00E846F9 /* HYContentView.swift */; };
 		DF792C372366DAE300E846F9 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF792C362366DAE300E846F9 /* HYPageView.swift */; };
-		DF8D3984236822BC0055C45C /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DF8D397D236822BC0055C45C /* yudpsocket.c */; };
-		DF8D3985236822BC0055C45C /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D397E236822BC0055C45C /* yudpsocket.swift */; };
-		DF8D3986236822BC0055C45C /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DF8D397F236822BC0055C45C /* ytcpsocket.c */; };
-		DF8D3987236822BC0055C45C /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D3980236822BC0055C45C /* ysocket.swift */; };
-		DF8D3988236822BC0055C45C /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D3981236822BC0055C45C /* ytcpsocket.swift */; };
-		DF8D3989236822BC0055C45C /* HYSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D3982236822BC0055C45C /* HYSocket.swift */; };
-		DF8D398A236822BC0055C45C /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D3983236822BC0055C45C /* Immessage.proto.swift */; };
 		DF8D3990236823900055C45C /* ChatContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8D398C236823900055C45C /* ChatContentView.xib */; };
 		DF8D3991236823900055C45C /* ChatContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8D398D236823900055C45C /* ChatContentCell.xib */; };
 		DF8D3992236823900055C45C /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D398E236823900055C45C /* ChatContentView.swift */; };
 		DF8D3993236823900055C45C /* ChatContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D398F236823900055C45C /* ChatContentCell.swift */; };
-		DF8D3995236828790055C45C /* IMMessage.proto in Sources */ = {isa = PBXBuildFile; fileRef = DF8D3994236828790055C45C /* IMMessage.proto */; };
+		DF8D39A2236937D50055C45C /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DF8D399B236937D40055C45C /* yudpsocket.c */; };
+		DF8D39A3236937D50055C45C /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D399C236937D40055C45C /* yudpsocket.swift */; };
+		DF8D39A4236937D50055C45C /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DF8D399D236937D40055C45C /* ytcpsocket.c */; };
+		DF8D39A5236937D50055C45C /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D399E236937D40055C45C /* ysocket.swift */; };
+		DF8D39A6236937D50055C45C /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D399F236937D40055C45C /* ytcpsocket.swift */; };
+		DF8D39A7236937D50055C45C /* HYSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D39A0236937D40055C45C /* HYSocket.swift */; };
+		DF8D39AA23693FB30055C45C /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D39A923693FB30055C45C /* Immessage.proto.swift */; };
+		DF8D39AD236942830055C45C /* IMMessage.proto in Sources */ = {isa = PBXBuildFile; fileRef = DF8D39AC236942830055C45C /* IMMessage.proto */; };
+		DF8D39AF236948340055C45C /* AttrStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D39AE236948340055C45C /* AttrStringGenerator.swift */; };
 		DF90FDE323559A0000DFFE47 /* heard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90FDE223559A0000DFFE47 /* heard.swift */; };
 		DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */; };
 		DF98AB01235FF7400056BA86 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98AAFF235FF7400056BA86 /* GiftPackage.swift */; };
@@ -270,18 +271,19 @@
 		DF713BD7235DB30D00ECE394 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		DF792C342366DABA00E846F9 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
 		DF792C362366DAE300E846F9 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
-		DF8D397D236822BC0055C45C /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
-		DF8D397E236822BC0055C45C /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
-		DF8D397F236822BC0055C45C /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
-		DF8D3980236822BC0055C45C /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
-		DF8D3981236822BC0055C45C /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
-		DF8D3982236822BC0055C45C /* HYSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSocket.swift; sourceTree = "<group>"; };
-		DF8D3983236822BC0055C45C /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		DF8D398C236823900055C45C /* ChatContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentView.xib; sourceTree = "<group>"; };
 		DF8D398D236823900055C45C /* ChatContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatContentCell.xib; sourceTree = "<group>"; };
 		DF8D398E236823900055C45C /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		DF8D398F236823900055C45C /* ChatContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentCell.swift; sourceTree = "<group>"; };
-		DF8D3994236828790055C45C /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = IMMessage.proto; sourceTree = "<group>"; };
+		DF8D399B236937D40055C45C /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		DF8D399C236937D40055C45C /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		DF8D399D236937D40055C45C /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		DF8D399E236937D40055C45C /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		DF8D399F236937D40055C45C /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		DF8D39A0236937D40055C45C /* HYSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSocket.swift; sourceTree = "<group>"; };
+		DF8D39A923693FB30055C45C /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		DF8D39AC236942830055C45C /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = IMMessage.proto; sourceTree = "<group>"; };
+		DF8D39AE236948340055C45C /* AttrStringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttrStringGenerator.swift; sourceTree = "<group>"; };
 		DF90FDE223559A0000DFFE47 /* heard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heard.swift; sourceTree = "<group>"; };
 		DF98AAFD235FF6A20056BA86 /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
 		DF98AAFF235FF7400056BA86 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
@@ -404,7 +406,7 @@
 		DF3F42E2233A5F4800D16AD5 /* zxjLive */ = {
 			isa = PBXGroup;
 			children = (
-				DF8D397A236822BC0055C45C /* common */,
+				DF8D3998236937D40055C45C /* commom */,
 				DF52A67923586F0A002EA595 /* level */,
 				DF02106C233E158D0096620D /* API */,
 				DF3F4329233A625C00D16AD5 /* customTabBar */,
@@ -709,37 +711,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DF8D397A236822BC0055C45C /* common */ = {
-			isa = PBXGroup;
-			children = (
-				DF8D397B236822BC0055C45C /* HYSocket */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		DF8D397B236822BC0055C45C /* HYSocket */ = {
-			isa = PBXGroup;
-			children = (
-				DF8D397C236822BC0055C45C /* ysocket */,
-				DF8D3982236822BC0055C45C /* HYSocket.swift */,
-				DF8D3983236822BC0055C45C /* Immessage.proto.swift */,
-				DF8D3994236828790055C45C /* IMMessage.proto */,
-			);
-			path = HYSocket;
-			sourceTree = "<group>";
-		};
-		DF8D397C236822BC0055C45C /* ysocket */ = {
-			isa = PBXGroup;
-			children = (
-				DF8D397D236822BC0055C45C /* yudpsocket.c */,
-				DF8D397E236822BC0055C45C /* yudpsocket.swift */,
-				DF8D397F236822BC0055C45C /* ytcpsocket.c */,
-				DF8D3980236822BC0055C45C /* ysocket.swift */,
-				DF8D3981236822BC0055C45C /* ytcpsocket.swift */,
-			);
-			path = ysocket;
-			sourceTree = "<group>";
-		};
 		DF8D398B236823900055C45C /* ChatContentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +720,38 @@
 				DF8D398D236823900055C45C /* ChatContentCell.xib */,
 			);
 			path = ChatContentView;
+			sourceTree = "<group>";
+		};
+		DF8D3998236937D40055C45C /* commom */ = {
+			isa = PBXGroup;
+			children = (
+				DF8D39AE236948340055C45C /* AttrStringGenerator.swift */,
+				DF8D3999236937D40055C45C /* HYSocket */,
+			);
+			path = commom;
+			sourceTree = "<group>";
+		};
+		DF8D3999236937D40055C45C /* HYSocket */ = {
+			isa = PBXGroup;
+			children = (
+				DF8D399A236937D40055C45C /* ysocket */,
+				DF8D39A0236937D40055C45C /* HYSocket.swift */,
+				DF8D39A923693FB30055C45C /* Immessage.proto.swift */,
+				DF8D39AC236942830055C45C /* IMMessage.proto */,
+			);
+			path = HYSocket;
+			sourceTree = "<group>";
+		};
+		DF8D399A236937D40055C45C /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				DF8D399B236937D40055C45C /* yudpsocket.c */,
+				DF8D399C236937D40055C45C /* yudpsocket.swift */,
+				DF8D399D236937D40055C45C /* ytcpsocket.c */,
+				DF8D399E236937D40055C45C /* ysocket.swift */,
+				DF8D399F236937D40055C45C /* ytcpsocket.swift */,
+			);
+			path = ysocket;
 			sourceTree = "<group>";
 		};
 		DF98AB05235FFEAA0056BA86 /* GiftView */ = {
@@ -1052,36 +1055,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8D3988236822BC0055C45C /* ytcpsocket.swift in Sources */,
 				DF52A64B23582B8F002EA595 /* liveDetaileViewController.swift in Sources */,
 				DF90FDE323559A0000DFFE47 /* heard.swift in Sources */,
 				DF52A65423586E53002EA595 /* Emitterable.swift in Sources */,
+				DF8D39A5236937D50055C45C /* ysocket.swift in Sources */,
 				DF3F431F233A623000D16AD5 /* recommendedViewController.swift in Sources */,
 				DF713BBE235D9C4F00ECE394 /* HYTitleStyle.swift in Sources */,
 				DF3F431B233A621900D16AD5 /* liveViewController.swift in Sources */,
 				DF8D3992236823900055C45C /* ChatContentView.swift in Sources */,
 				DF98AB0A235FFEAA0056BA86 /* GiftViewCell.swift in Sources */,
 				DF792C372366DAE300E846F9 /* HYPageView.swift in Sources */,
+				DF8D39A7236937D50055C45C /* HYSocket.swift in Sources */,
 				DF713BB4235D9BEC00ECE394 /* EmoticonViewCell.swift in Sources */,
-				DF8D3987236822BC0055C45C /* ysocket.swift in Sources */,
 				DFF696D2235816B400166A18 /* homeViewController.swift in Sources */,
 				DF03572B233CC57800FC78AD /* APIManager.swift in Sources */,
 				DF98AAFE235FF6A20056BA86 /* GiftViewModel.swift in Sources */,
-				DF8D3985236822BC0055C45C /* yudpsocket.swift in Sources */,
 				DF713BC8235D9D1700ECE394 /* EmoticonViewModel.swift in Sources */,
 				DFF696D5235817FE00166A18 /* AnchorViewController.swift in Sources */,
 				DF3F432B233A62AD00D16AD5 /* coustomViewController.swift in Sources */,
 				DF713BC2235D9C4F00ECE394 /* HYPageCollectionViewLayout.swift in Sources */,
-				DF8D3984236822BC0055C45C /* yudpsocket.c in Sources */,
 				DF3F4327233A624F00D16AD5 /* profileViewController.swift in Sources */,
-				DF8D3989236822BC0055C45C /* HYSocket.swift in Sources */,
 				DF035729233CC4F100FC78AD /* EnvironmentManager.swift in Sources */,
 				DF02106F233E165C0096620D /* apiConfig.swift in Sources */,
+				DF8D39A2236937D50055C45C /* yudpsocket.c in Sources */,
+				DF8D39AF236948340055C45C /* AttrStringGenerator.swift in Sources */,
+				DF8D39A3236937D50055C45C /* yudpsocket.swift in Sources */,
+				DF8D39AA23693FB30055C45C /* Immessage.proto.swift in Sources */,
 				DF713BB1235D9BEC00ECE394 /* EmoticonView.swift in Sources */,
-				DF8D398A236822BC0055C45C /* Immessage.proto.swift in Sources */,
 				DF8D3993236823900055C45C /* ChatContentCell.swift in Sources */,
 				DF3F42E4233A5F4800D16AD5 /* AppDelegate.swift in Sources */,
 				DF52A64823582B5F002EA595 /* XMGNavigationController.swift in Sources */,
+				DF8D39A4236937D50055C45C /* ytcpsocket.c in Sources */,
+				DF8D39A6236937D50055C45C /* ytcpsocket.swift in Sources */,
 				DF98AB02235FF7400056BA86 /* GiftModel.swift in Sources */,
 				DF035726233CC03B00FC78AD /* dataModel.swift in Sources */,
 				DF713BB2235D9BEC00ECE394 /* ChatToolsView.swift in Sources */,
@@ -1091,9 +1096,8 @@
 				DF4A8A88234081E000BE8B3C /* NDCollectionView.swift in Sources */,
 				DF792C352366DABA00E846F9 /* HYContentView.swift in Sources */,
 				DF3F4323233A624100D16AD5 /* findViewController.swift in Sources */,
+				DF8D39AD236942830055C45C /* IMMessage.proto in Sources */,
 				DF713BCA235D9D1700ECE394 /* EmoticonPackage.swift in Sources */,
-				DF8D3995236828790055C45C /* IMMessage.proto in Sources */,
-				DF8D3986236822BC0055C45C /* ytcpsocket.c in Sources */,
 				DF713BCC235D9E2800ECE394 /* NibLoadable.swift in Sources */,
 				DF713BC9235D9D1700ECE394 /* Emoticon.swift in Sources */,
 				DF3F4318233A620800D16AD5 /* BaseViewController.swift in Sources */,
@@ -1280,7 +1284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = zxjLive/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = zxjLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1307,7 +1311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = zxjLive/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = zxjLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

@@ -3,6 +3,7 @@ syntax = "proto2";
 message UserInfo {
     required string name = 1;
     required int64 level = 2;
+    required string iconUrl = 3;
 }
 
 message TextMessage {
@@ -14,5 +15,10 @@ message GiftMessage {
     required UserInfo user = 1;
     required string giftname = 2;
     required string giftURL = 3;
-    required string giftCount = 4;
+    required int64 giftCount = 4;
+}
+
+message ChatMessage {
+    required UserInfo user = 1;
+    required string text = 2;
 }
