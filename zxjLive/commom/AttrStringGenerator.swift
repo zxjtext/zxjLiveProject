@@ -18,7 +18,7 @@ extension AttrStringGenerator {
     class func generateJoinLeaveRoom(_ username : String, _ isJoin : Bool) -> NSAttributedString {
         let roomString = "\(username) " + (isJoin ? "进入房间" : "离开房间")
         let roomMAttr = NSMutableAttributedString(string: roomString)
-        roomMAttr.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.characters.count))
+        roomMAttr.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.count))
         
         /*
          let attachment = NSTextAttachment()
@@ -39,13 +39,13 @@ extension AttrStringGenerator {
         let chatMsgMAttr = NSMutableAttributedString(string: chatMessage)
         
         // 3.将名称修改成橘色
-        chatMsgMAttr.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.characters.count))
+        chatMsgMAttr.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.count))
         
         // 4.将所有表情匹配出来, 并且换成对应的图片进行展示
         // 4.1.创建正则表达式匹配表情 我是主播[哈哈], [嘻嘻][嘻嘻] [123444534545235]
         let pattern = "\\[.*?\\]"
         guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else { return chatMsgMAttr }
-        let results = regex.matches(in: chatMessage, options: [], range: NSRange(location: 0, length: chatMessage.characters.count))
+        let results = regex.matches(in: chatMessage, options: [], range: NSRange(location: 0, length: chatMessage.count))
         
         // 4.2.获取表情的结果
         for i in (0..<results.count).reversed() {
@@ -81,7 +81,7 @@ extension AttrStringGenerator {
         let sendGiftMAttrMsg = NSMutableAttributedString(string: sendGiftMsg)
         
         // 3.修改用户的名称
-        sendGiftMAttrMsg.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.characters.count))
+        sendGiftMAttrMsg.addAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], range: NSRange(location: 0, length: username.count))
         
         // 4.修改礼物的名称
         let range = (sendGiftMsg as NSString).range(of: giftname)
